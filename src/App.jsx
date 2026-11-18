@@ -236,12 +236,7 @@ export default function App() {
     return () => ctx.revert();
   }, []);
 
-  const handleModalSubmit = (e) => {
-    e.preventDefault();
-    if (emailInput.trim()) {
-      setSubmitted(true);
-    }
-  };
+
 
   return (
     <div ref={mainRef} className="relative min-h-screen bg-creme text-charbon selection:bg-argile selection:text-white font-title">
